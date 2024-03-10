@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap') 
+
+:root {
+
+    --cor-background: #F3F5FC;
+    --fonte-primaria: "Inter", sans-serif;
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+ 
+}
+
+.logo {
+    padding: 2% 0 1% 0;
+    width: 7.5rem;
+    height: 3rem;
+    top: 2.5rem;
+    left: 2.5rem;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5%;
+    
+}
+
+.retangulo{
+    width: 25rem;
+    height: 59rem;
+    top: 2.5rem;
+    left: 62.5rem;
+    border-radius: 2rem;
+    
+}
+
+.area_input_cripto{
+    display: flex;
+    justify-content: center;
+    width: 42.5rem;
+    height: 3rem;
+    top: 10.5rem;
+    left: 15rem;
+    border: none;
+    background-color: var(--cor-background);
+
+
+}
+
+
+#input_cripto::placeholder  { 
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    size: 2rem;
+    line-height: 3rem;
+
+}
+
+.area_input {
+    display: flex;
+    width: 100%;
+    gap: 2%;
+}
+
+.area_input_botao {
+    display: flex;
+    font-family: var(--fonte-primaria);
+    width: 680px;
+    height: 67px;
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rodape {
+    justify-content: center;
+}
