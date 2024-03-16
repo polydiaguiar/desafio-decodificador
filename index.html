@@ -8,36 +8,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="body">
+<body>
 
     <header>
-        <img class="logo" src="./assets/Logo.svg">
+        <img class="logo" src="./assets/Logo.svg" alt="Letra a minúscula">
     </header>
-    <main class="main">
-       
-        <img class="retangulo" src="./assets/Retangulo.png"
-      
-        <section>
-            <div id="area_input_cripto">
-                <input type="text" placeholder="Digite seu texto." class="area_input_cripto">
-            </div>
-        </section>
+    <main>  
+
         <section class="area_input">
-            <div class="area_input_alerta">
-                <img src="./assets/Alerta.svg" alt="Ícone de alerta">
-                <label>Apenas letras minúsculas e sem acento.</label>
+           
+            <div class="area_input_texto">
+                <textarea name="texto" placeholder="Digite seu texto." > </textarea>
             </div>
+            <div class="area_input_alerta">
+                <img src="/assets/Alerta.svg" alt="Ícone de alerta">
+                <p class="area_input_alerta_label">Apenas letras minúsculas e sem acento.</p>
+            </div>       
             <div class="area_input_botao">
                 <button class="botao_criptografar"> Criptografar</button>
                 <button class="botao_descriptografar"> Descriptografar</button>
             </div>
         </section>
+
+        <section class="area_output">
+           
+                <img class="area_output_pessoa" src="/assets/Pessoa.svg" alt="Pessoa com cabelo azul com lupa na mão">
+           
+            <div class="area_output_msg">
+                <p1 class="area_output_msg_alerta">Nenhuma mensagem encontrada</p1> 
+                <p2 class="area_output_msg_instruçao">Digite um texto que você deseja criptografar ou descriptografar.</p2>
+            </div>
+            <div class="area_output_btn">
+                <input type="button" class="output_btn_copiar" value="Copiar"> 
+            </div>
+        </section>
+        <section class="area_output_texto">
+            <p class="area_output_texto_resultado"> </p>
+
+        </section>
+
     </main>
+
     <footer class="rodape">
         <p> Polyana Aguiar 2024</p>
     </footer>
-
-    <script scr="script.js"></script>
 
 </body>
 

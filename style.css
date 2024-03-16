@@ -1,99 +1,264 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap') 
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
-
-    --cor-background: #F3F5FC;
+    --cor-background-white: white;
+    --cor-background: #EFF1FA;
+    --cor-background-hover-btn: #F3F5FC;
+    --cor-secundaria: #0A3871;
+    --cor-secundaria-hover: #072B61;
+    --cor-terciaria: #495057;
+    --cor-fonte-output: #343A40;
     --fonte-primaria: "Inter", sans-serif;
 
-
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: var(--fonte-primaria);
+
 }
 
-.body{
-
+body {
+    background-color: var(--cor-background);
     box-sizing: border-box;
-    background-color: #F3F5FC;
- 
+}
+
+main {
+    display: flex;
+    position: relative;
+   
 }
 
 .logo {
-    padding: 2% 0 1% 0;
+    position: absolute;
     width: 7.5rem;
     height: 3rem;
     top: 2.5rem;
-    left: 2.5rem;
-}
-
-
-.main {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 5%;
-    
-}
-
-.retangulo{
-    width: 25rem;
-    height: 59rem;
-    top: 2.5rem;
-    left: 62.5rem;
-    border-radius: 2rem;
-    
-}
-
-.area_input_cripto{
-    display: flex;
-    justify-content: center;
-    width: 42.5rem;
-    height: 3rem;
-    top: 10.5rem;
-    left: 15rem;
-    border: none;
-    background-color: var(--cor-background);
-
-
-}
-
-
-#input_cripto::placeholder  { 
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    size: 2rem;
-    line-height: 3rem;
-
+    left: 1.5rem;
 }
 
 .area_input {
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.area_input_texto {
+    position: absolute;
+    width: 42.5rem;
+    height: 19rem;
+    top: 10.5rem;
+    left: 15rem;
+
+}
+
+textarea{
+    resize: none;
+    padding: 0.5rem;
+    border: none;
+    height: 100%;
     width: 100%;
-    gap: 2%;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-background);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+textarea::placeholder {
+    color: var(--cor-secundaria);
+   
+}
+
+.area_input_alerta {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-content: space-between;
+    width: 30%;
+    height: 1rem;
+    top: 32rem;
+    left: 15rem;
+
+
+}
+
+.area_input_alerta_label {
+    color: var(--cor-terciaria);
+    font-size: small;
+
 }
 
 .area_input_botao {
+    position: absolute;
     display: flex;
+    gap: 0.4rem;
     font-family: var(--fonte-primaria);
-    width: 680px;
-    height: 67px;
-    top: 885px;
-    left: 240px;
-    gap: 24px;
+    width: 32.5rem;
+    height: 4.19rem;
+    top: 33.4rem;
+    left: 15rem;
+
+}
+
+.botao_criptografar {
+    width: 18rem;
+    height: 3.19rem;
+    top: 55.31rem;
+    border-radius: 1rem;
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-background);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.21rem;
+    cursor: pointer;
+
+
 }
 
 
+.botao_criptografar:hover {
+    background-color: var(--cor-secundaria-hover);
+
+}
+
+.botao_descriptografar {
+
+    width: 18rem;
+    height: 3.19rem;
+    top: 55.31rem;
+    border-radius: 1rem;
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.21rem;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.botao_descriptografar:hover {
+    background-color: var(--cor-background-hover-btn);
+
+}
+
+.area_output {
+    display: block;
+    position: absolute;
+    width: 17rem;
+    height: 36.5rem;
+    top: 2.0rem;
+    left: 60rem;
+    background-color: var(--cor-background-white);
+    border-radius: 2rem;
+    box-shadow: 0 2rem 2.5rem -0.5rem rgb(0, 0, 0, 0.5);
 
 
+}
+
+.area_output_pessoa {
+    position: absolute;
+    display: block;
+    top: 7rem;
+    left: 1rem;
+    box-sizing: border-box;
+    width: 15rem ;
+    height:auto;
+    
+
+}
+
+.area_output_msg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 23rem;
+    left: 1rem;
+    width: 15rem;
+    height: 7.63rem;
+    letter-spacing: 0rem;
+   
+}
 
 
+.area_output_msg_alerta {
+    color: var(--cor-fonte-output);
+    font-size: 1.0rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-align: center;
+
+}
+
+.area_output_msg_instruçao {
+    color: var(--cor-terciaria);
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: center;
+    width: 17rem;
+    position: relative;
+    right: 1rem;
+}
+
+.area_output_btn {
+    position: absolute;
+    top: 31.5rem;
+    display: flex;
+    left: 1rem;
+   
+ 
+}
+
+.output_btn_copiar {
+
+    width: 15rem;
+    height: 3rem;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-background-white);
+    border-radius: 1rem;
+    border: 0.063rem solid var(--cor-secundaria);
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.19rem;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
 
 
+}
+
+.area_output_texto{
+    box-sizing: border-box;
+    position: absolute;
+    width: 17rem;
+    height: 36.5rem;
+    top: 2.0rem;
+    left: 60rem;
+}
 
 
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
 
 .rodape {
-    justify-content: center;
+    text-align: center;
+    color: var(--cor-terciaria);
+    font-size: small;
+    
 }
+
+@media screen {
+
+
+    
