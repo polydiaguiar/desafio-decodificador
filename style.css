@@ -28,7 +28,7 @@ body {
 main {
     display: flex;
     position: relative;
-   
+
 }
 
 .logo {
@@ -54,7 +54,7 @@ main {
 
 }
 
-textarea{
+textarea {
     resize: none;
     border: none;
     height: 100%;
@@ -69,7 +69,7 @@ textarea{
 
 textarea::placeholder {
     color: var(--cor-secundaria);
-   
+
 }
 
 .area_input_alerta {
@@ -166,9 +166,9 @@ textarea::placeholder {
     top: 7rem;
     left: 1rem;
     box-sizing: border-box;
-    width: 15rem ;
-    height:auto;
-    
+    width: 15rem;
+    height: auto;
+
 
 }
 
@@ -181,7 +181,7 @@ textarea::placeholder {
     width: 15rem;
     height: 7.63rem;
     letter-spacing: 0rem;
-   
+
 }
 
 
@@ -210,8 +210,8 @@ textarea::placeholder {
     top: 31.5rem;
     display: flex;
     left: 1rem;
-   
- 
+
+
 }
 
 .output_btn_copiar {
@@ -233,7 +233,7 @@ textarea::placeholder {
 
 }
 
-.area_output_texto{
+.area_output_texto {
     box-sizing: border-box;
     position: absolute;
     width: 17rem;
@@ -243,7 +243,7 @@ textarea::placeholder {
 }
 
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -254,10 +254,106 @@ footer{
     text-align: center;
     color: var(--cor-terciaria);
     font-size: small;
-    
+
 }
 
-@media screen {
+@media (max-width:1300px) {
+
+    .area_input_texto {
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        left: 5rem;
+        top: 9rem;
+    }
+
+    .area_input_alerta {
+        position: absolute;
+        left: 5rem;
+        top: 23.5rem;
+        width: fit-content;
+    }
+
+    .area_input_botao {
+        position: absolute;
+        top: 24.7rem;
+        left: 5rem;
+
+    }
+
+    .area_output {
+        position: absolute;
+        left: 5rem;
+        width: 33rem;
+        height: 8.3rem;
+        top: 29rem;
+
+    }
+
+    .area_output_pessoa {
+        display: none;
+    }
+
+    .area_output_msg {
+        position: absolute;
+        left: 7rem;
+        top: 2rem;
+        width: fit-content;
+        gap:4%;
+    }
+    .area_output_msg_instruçao {
+        width: fit-content;
+        left: 0.1rem;
+    }
+
+
+    .area_output_btn {
+        display: none;
+    }
+
+    .rodape {
+       display: none;
+    }
+
+}
+
+@media (max-width:375px){
+
+    .area_input_alerta {
+        left: 4rem;
+        top: 23.5rem;
+        width: fit-content;
+    }
+
+    .area_input_botao {
+        display: flex;
+        flex-direction: column;
+        top: 24.7rem;
+        left: 4em;
+        height: fit-content;
+
+    }
+
+    .area_output {
+        position: absolute;
+        left: 4rem;
+        width: 18rem;
+        height: 8.3rem;
+        top: 32rem;
+    }
+
+    .area_output_msg {
+        position: absolute;
+        left: 2rem;
+        top: 1.5rem;
+        width: 13rem;
+        gap:4%;
+    }
+    .area_output_msg_instruçao {
+        width: 13rem;
+       
+    }
 
 
     
+}
