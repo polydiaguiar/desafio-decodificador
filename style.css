@@ -56,7 +56,6 @@ main {
 
 textarea{
     resize: none;
-    padding: 0.5rem;
     border: none;
     height: 100%;
     width: 100%;
