@@ -1,7 +1,7 @@
 # Encriptação de texto
 ![Static Badge](https://img.shields.io/badge/Desenvolvedora%20-%20Polyana%20Aguiar%20-%20green?style=for-the-badge&color=%23000000)
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/Desenvolvimento-conclu%C3%ADdo-black?style=flat-square&labelColor=black&color=green)
 
 
 Projeto criptografar e descriptografar texto.
@@ -23,7 +23,7 @@ Projeto criptografar e descriptografar texto.
 
 ## Funcionalidades
 
-- `Funcionalidade 1`: converter texto inserido por usuário;
+- `Funcionalidade 1`: criptografar texto inserido por usuário;
 - `Funcionalidade 2`: copiar texto criptografado ou descriptografado.
 
 ## Aplicação
