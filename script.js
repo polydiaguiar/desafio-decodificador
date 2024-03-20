@@ -16,7 +16,7 @@ function criptografar() {
     } else {
         text = text.replaceAll('a', 'arm')
         text = text.replaceAll('e', 'endy')
-        text = text.replaceAll('i', 'ivos')
+        text = text.replaceAll('i', 'ivsh')
         text = text.replaceAll('o', 'ot')
         text = text.replaceAll('u', 'uify')
 
@@ -37,7 +37,7 @@ function descriptografar() {
     } else {
         text = text.replaceAll('arm', 'a')
         text = text.replaceAll('endy', 'e')
-        text = text.replaceAll('ivos', 'i')
+        text = text.replaceAll('ivsh', 'i')
         text = text.replaceAll('ot', 'o')
         text = text.replaceAll('uify', 'u')
 
