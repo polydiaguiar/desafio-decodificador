@@ -18,7 +18,7 @@ main {
 
 textarea {
     width: 90%;
-    height: 320px;
+    height: 20rem;
     padding: 1em;
     background: #F3F5FC;
     color: #0A3871;
@@ -36,7 +36,7 @@ textarea:focus {
 
 .buttons {
     text-align: center;
-    margin: 20px 0;
+    margin: 3.33rem 0;
 }
 
 .dark-button {
