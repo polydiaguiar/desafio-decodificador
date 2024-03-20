@@ -14,11 +14,11 @@ function criptografar() {
         output.style.display = 'none';
         message.style.display = 'block';
     } else {
-        text = text.replaceAll('e', 'enter')
-        text = text.replaceAll('i', 'imes')
-        text = text.replaceAll('a', 'ai')
-        text = text.replaceAll('o', 'ober')
-        text = text.replaceAll('u', 'ufat')
+        text = text.replaceAll('a', 'arme')
+        text = text.replaceAll('e', 'endy')
+        text = text.replaceAll('i', 'ivos')
+        text = text.replaceAll('o', 'ot')
+        text = text.replaceAll('u', 'uifa')
 
         message.style.display = 'none';
         output.style.display = 'block';
@@ -35,11 +35,12 @@ function descriptografar() {
         output.style.display = 'none';
         message.style.display = 'block';
     } else {
-        text = text.replaceAll('ufat', 'u')
-        text = text.replaceAll('ober', 'o')
-        text = text.replaceAll('ai', 'a')
-        text = text.replaceAll('imes', 'i')
-        text = text.replaceAll('enter', 'e')
+        text = text.replaceAll('arme', 'a')
+        text = text.replaceAll('endy', 'e')
+        text = text.replaceAll('ivos', 'i')
+        text = text.replaceAll('ot', 'o')
+        text = text.replaceAll('uifa', 'u')
+
 
         message.style.display = 'none';
         output.style.display = 'block';
