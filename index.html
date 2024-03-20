@@ -1,53 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Decodificador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1><img src="Logo.svg" alt="Letra a minúscula"></h1>
+        </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header>
-        <img class="logo" src="Logo.svg" alt="Letra a minúscula">
-    </header>
-    <main>  
-
-        <section class="area_input">
-           
-            <div class="area_input_texto">
-                <textarea name="texto" placeholder="Digite seu texto." > </textarea>
+        <main>
+            <div class="left-panel">
+                <textarea id="input-textarea" cols="30" rows="10" placeholder="Digite seu texto" spellcheck="false"></textarea>
+                <p><i class="fa fa-info-circle" aria-hidden="true"></i> Apenas letras minúsculas e sem acento</p>
+                <div class="buttons">
+                    <button class="dark-button" id="crip-button">Criptografar</button>
+                    <button class="light-button" id="decrip-button">Descriptografar</button>
+                </div>
             </div>
-            <div class="area_input_alerta">
-                <img src="Alerta.svg" alt="Ícone de alerta">
-                <p class="area_input_alerta_label">Apenas letras minúsculas e sem acento.</p>
-            </div>       
-            <div class="area_input_botao">
-                <button class="botao_criptografar"> Criptografar</button>
-                <button class="botao_descriptografar"> Descriptografar</button>
+            
+            <div class="right-panel">
+                <div class="message">
+                    <img class="desenho" src="Ilustração.svg" alt="Pessoa com cabelo azul com lupa na mão">
+                    <p><strong>Nenhuma mensagem encontrada</strong></p>
+                    <p>Digite  seu texto.</p>
+                </div>
+                <div class="output">
+                    <p class="output-text"></p>
+                    <button class="light-button" id="copy-button">Copiar</button>
+                </div>
             </div>
-        </section>
+        </main>
 
-        <section class="area_output">
-           
-                <img class="area_output_pessoa" src="Pessoa.svg" alt="Pessoa com cabelo azul com lupa na mão">
-           
-            <div class="area_output_msg">
-                <p1 class="area_output_msg_alerta">Nenhuma mensagem encontrada</p1> 
-                <p2 class="area_output_msg_instruçao">Digite um texto que você deseja criptografar ou descriptografar.</p2>
-            </div>
-            <div class="area_output_btn">
-                <input type="button" class="output_btn_copiar" value="Copiar"> 
-            </div>
-        </section>
-        <section class="area_output_texto">
-            <p class="area_output_texto_resultado"> </p>
 
-        </section>
-
-    </main>
+    <footer>
+        
 
     <footer class="rodape">
         <p> Polyana Aguiar 2024</p>
