@@ -121,7 +121,7 @@ footer > p, a {
     text-decoration: none;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1000px) {
     .left-panel, .right-panel {
         width: 100%;
     }
