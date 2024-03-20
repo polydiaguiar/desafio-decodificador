@@ -25,7 +25,6 @@ Projeto criptografar e descriptografar texto.
 
 - `Funcionalidade 1`: criptografar texto inserido por usuário;
 - `Funcionalidade 2`: copiar texto criptografado ou descriptografado.
+![Funcionalidades](https://github.com/polydiaguiar/desafio-decodificador/assets/152785008/50bc7c1d-6cc3-47ba-a1fa-0ec98c606be1)
 
-## Aplicação
 
-:construction: 
