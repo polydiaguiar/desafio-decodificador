@@ -43,27 +43,27 @@ textarea:focus {
     background: #0A3871;
     color: #F3F5FC;
     border: 1px solid #0A3871;
-    border-radius: 10px;
+    border-radius: 0.62rem;
     font-size: 0.8em;
-    padding: 15px 0px;
-    width: 250px;
-    margin: 0 25px;
+    padding: 0.94rem 0rem;
+    width: 16.62rem;
+    margin: 0 1.56rem;
 }
 
 .light-button {
     background: none;
     color: #0A3871;
     border: 1px solid #0A3871;
-    border-radius: 10px;
+    border-radius: 0.62rem;
     font-size: 0.8em;
-    padding: 15px 0px;
-    width: 250px;
-    margin: 0 25px;
+    padding:  0.94rem 0rem;
+    width:  16.62rem;
+    margin:  0 1.56rem;
 }
 
 .left-panel  p {
     text-align: left;
-    margin-top: 10px;
+    margin-top: 0.62rem;
     font-size: 0.8em;
     color: #495057;
 }
@@ -74,8 +74,8 @@ textarea:focus {
     vertical-align: top;
     text-align: center;
     background-color: #FFFFFF;
-    border-radius: 15px;
-    height: 490px;
+    border-radius: 0.94rem;
+    height: 30.62rem;
     box-shadow: 5px 5px 15px #49505780;
 }
 
@@ -91,19 +91,19 @@ strong {
 
 .right-panel  p {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 1.56rem;
     font-size: 1em;
     color: #495057;
 }
 
 .output-text {
-    height: 350px;
-    margin: 0px;
+    height: 21.87rem;
+    margin: 0rem;
 }
 
 #copy-button {
     width: 85%;
-    margin: 20px 0px;
+    margin: 1.25rem 0rem;
 }
 
 footer {
@@ -131,11 +131,11 @@ footer > p, a {
     }
 
     .right-panel {
-        height: 300px;
+        height: 18.75rem;
     }
 
     .output-text {
-        height: 165px;
+        height: 10.31rem;
     }
 }
 
